@@ -1,0 +1,1 @@
+This will setup the Peux OS Xmonad configurations on your system. You would be prompted to install the required packages first. If you skip, then you'd still be prompted to copy the configurations, which you can if you wish to. The repository can be found at https://github.com/peux-os-sic/Peux-Xmonad.
