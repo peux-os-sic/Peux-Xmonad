@@ -94,12 +94,9 @@ addEWMHFullscreen   = do
 xmKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
     [ 
-      
-    -- launch calamares [remove it after installation]
-      ((modm .|.   controlMask, xK_c     ), spawn "sudo calamares")
-      
+
     -- launch a terminal
-    ,  ((modm .|. shiftMask, xK_Return), spawn $ XMonad.terminal conf)
+      ((modm .|. shiftMask, xK_Return), spawn $ XMonad.terminal conf)
 
     -- lock screen
     , ((modm, xK_x), spawn "exec ~/.config/system_scripts/session_lock")
@@ -338,8 +335,6 @@ xmStartupHook = do
   spawnOnce "indicator-keylock"
   spawnOnce "nm-applet"
   spawnOnce "udiskie -A"
-  spawnOnce "welcomeapp"
-
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
 
