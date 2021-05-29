@@ -19,6 +19,8 @@ then
         notify-send "Xmonad is already installed. Skipping!"   
     else 
         echo -e $PASSWD | sudo -S pacman -Syu xmonad xmonad-contrib
+        # dependencies of the system
+        echo -e $PASSWD | sudo -S pacman -Syu feh picom ttf-font-awesome i3lock
         notify-send "installed Xmonad"
     fi
     if zenity --question --text="Install Tint2 Panel?"
