@@ -54,8 +54,7 @@ if zenity --question --text="Want to copy the configurations?"
 then 
     echo "changing directory"
     cd ../
-    cp -r Peux-Xmonad/tint2/ $HOME/.config/
-    cp -r Peux-Xmonad/rofi/ $HOME/.config/
+    cp -r Peux-Xmonad/* $HOME/.config/
     cp -r Peux-Xmonad/.xmonad/ $HOME/
     notify-send "Copied the configurations"
 else
